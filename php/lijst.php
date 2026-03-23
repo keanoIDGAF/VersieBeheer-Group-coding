@@ -24,23 +24,9 @@
 
     <main>
       <article>
-        <h2>Over deze website</h2>
-        <!-- Project 1 -->
+        <h2>Invul Lijst</h2>
         <div class="project">
           <div class="project-text">
-            <h3>Wat voor website is dit?</h3>
-            <p> Deze website is gemaakt om jou als klant een lijst in te laten vullen 
-                en een admin zal dan jou een image doorsturen hoe jou portfolie website eruit zou zien.
-            </p>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project">
-          <div class="project-text">
-            <h3>Placeholder</h3>
-            <p>
-                placeholder
-            </p>
           </div>
         </div>
     <footer>
