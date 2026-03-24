@@ -24,14 +24,41 @@
 
     <main>
       <article>
-        <h2>Invul Lijst</h2>
-        <div class="project">
-          <div class="project-text">
-          </div>
-        </div>
+        <div class="card">
+    <h2>📂 Portfolio Builder</h2>
+    
+    <label>Who are you?</label>
+    <input type="text" id="identity" placeholder="e.g. A digital nomad coder">
+
+    <label>What are your superpowers?</label>
+    <input type="text" id="skills" placeholder="e.g. Speed typing and UI design">
+
+    <label>What's on your desk?</label>
+    <input type="text" id="tools" placeholder="e.g. Mechanical keyboard and a cat">
+
+    <label>Visual Style</label>
+    <select id="style">
+        <option value="3D Isometric render">3D Isometric</option>
+        <option value="Cinematic photography">Cinematic Photo</option>
+        <option value="Minimalist vector art">Minimalist Vector</option>
+        <option value="Cyberpunk digital painting">Cyberpunk</option>
+    </select>
+
+    <label>Color Palette</label>
+    <input type="text" id="colors" placeholder="e.g. Deep blues and gold">
+
+    <button onclick="generatePrompt()">Generate Image Prompt</button>
+
+    <div id="result">
+        <strong>Your Prompt:</strong>
+        <p id="promptText"></p>
+        <p class="copy-hint">Copy this and paste it into our chat!</p>
+    </div>
+  </div>
     <footer>
       @Group Coding Versie beheer
     </footer>
   </div>
+  <script src="../script.js"></script>
 </body>
 </html>

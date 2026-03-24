@@ -98,6 +98,41 @@ footer {
     border-top: 1px solid #ddd;
 }
 
-.list{
-   
+input, select { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    box-sizing: border-box; 
+}
+
+    button { 
+        width: 100%; 
+        margin-top: 20px; 
+        padding: 12px; 
+        background: #6366f1; 
+        color: white; 
+        border: none; 
+        border-radius: 6px; 
+        cursor: pointer; 
+        font-size: 16px; 
+}
+
+    button:hover { 
+        background: #4f46e5; 
+}
+
+    #result { 
+        margin-top: 20px; 
+        padding: 15px; 
+        background: #eef2ff; 
+        border-left: 4px solid #6366f1; 
+        display: none; 
+}
+
+    .copy-hint { 
+        font-size: 0.8em; 
+        color: #888; 
+        margin-top: 10px; 
 }
