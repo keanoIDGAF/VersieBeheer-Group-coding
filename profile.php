@@ -1,5 +1,4 @@
 <?php
-<<<<<<< Updated upstream
 $fname = $_POST['fname'] ?? '';
 $lname = $_POST['lname'] ?? '';
 $email = $_POST['email'] ?? '';
@@ -21,7 +20,6 @@ $description = $_POST['description'] ?? '';
 $linkedin = $_POST['linkedin'] ?? '';
 $github = $_POST['github'] ?? '';
 $portfolio = $_POST['portfolio'] ?? '';
-=======
 // 1. Database configuratie
 $host = 'localhost';
 $db = 'prjct'; // Zorg dat dit overeenkomt met je database naam
@@ -77,7 +75,6 @@ $description = $profile['description'];
 $linkedin = $profile['linkedin'];
 $github = $profile['github'];
 $portfolio = $profile['portfolio'];
->>>>>>> Stashed changes
 ?>
 
 <!doctype html>
@@ -85,7 +82,6 @@ $portfolio = $profile['portfolio'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
     <title>Mijn Profiel</title>
 </head>
 <body>
@@ -120,7 +116,7 @@ $portfolio = $profile['portfolio'];
     <p><strong>LinkedIn:</strong> <?php echo htmlspecialchars($linkedin); ?></p>
     <p><strong>GitHub:</strong> <?php echo htmlspecialchars($github); ?></p>
     <p><strong>Portfolio website:</strong> <?php echo htmlspecialchars($portfolio); ?></p>
-=======
+
     <title>Profiel van <?php echo htmlspecialchars($fname); ?></title>
     <style>
         /* CSS Reset */
@@ -258,7 +254,6 @@ endif; ?>
             </div>
         </div>
     </div>
->>>>>>> Stashed changes
 
 </body>
 </html>

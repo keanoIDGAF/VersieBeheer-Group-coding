@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <!-- ...................................................... -->
 <!-- Name:                       Portfolio List             -->
 <!-- Why its made:               This is made for database management -->
@@ -282,4 +280,3 @@ endif; ?>
 
 </body>
 </html>
->>>>>>> Stashed changes
