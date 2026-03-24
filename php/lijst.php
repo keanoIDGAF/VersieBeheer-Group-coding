@@ -20,6 +20,7 @@
 <nav class="main-nav">
   <a href="../php/index.php" class="btn">Home</a>
   <a href="../php/lijst.php" class="btn">Lijst</a>
+  <a href="../php/Login.php" class="btn">Login</a>
 </nav>
 
     <main>
