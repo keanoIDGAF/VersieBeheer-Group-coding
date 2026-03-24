@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <!-- ...................................................... -->
 <!-- Name:                       Portfolio List   -->
 <!-- Why its made:               This website is made for a school project where we need to make a website that is based on the wireframes and mock-ups we made -->
@@ -52,4 +50,3 @@
   </div>
 </body>
 </html>
->>>>>>> Stashed changes

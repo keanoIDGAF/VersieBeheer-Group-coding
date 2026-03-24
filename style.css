@@ -1,194 +1,138 @@
+/* ...................................................... 
+   Name:           Portfolio List
+   Why its made:   School project based on wireframes/mock-ups
+   Why this file:  Styling and colors
+   ...................................................... */
+
+/* 1. Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    display: flex;
-    color: #1e293b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
 }
 
-/* SIDEBAR */
-.sidebar {
-    width: 230px;
-    background: #1f3b5b;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 2. Header & Navigation */
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: #2c3e50;
     color: white;
-    min-height: 100vh;
-    padding: 24px 20px;
-    box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
 }
 
-.logo {
-    margin: 0 0 30px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.sidebar a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 10px 0;
-    padding: 10px 12px;
-    border-radius: 8px;
-    transition: background 0.2s ease;
-}
-
-.sidebar a:hover {
-    background: rgba(255, 255, 255, 0.12);
-}
-
-/* MAIN */
-.main-content {
-    flex: 1;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-.top-bar {
+.main-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
+    justify-content: center;
+    background: #34495e;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0 0 8px 8px;
 }
 
-.top-bar h1 {
-    margin: 0;
-    font-size: 30px;
-    color: #0f172a;
-}
-
-.top-bar p {
-    margin: 6px 0 0;
-    color: #64748b;
-    font-size: 15px;
-}
-
-/* BUTTON */
 .btn {
-    background: #3b82f6;
     color: white;
-    padding: 11px 18px;
     text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.2s ease;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background: #2563eb;
+    background: #3498db;
 }
 
-/* CARDS */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-bottom: 28px;
-}
-
-.stat-card {
+/* 3. Content Area */
+main {
     background: white;
-    padding: 22px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
-    border: 1px solid #e2e8f0;
-}
-
-.stat-card h3 {
-    margin: 0 0 14px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #475569;
-}
-
-.stat-number {
-    margin: 0;
-    font-size: 34px;
-    font-weight: 700;
-    color: #1f3b5b;
-}
-
-/* TABLE BOX */
-.table-box {
-    background: white;
-    padding: 22px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
-    border: 1px solid #e2e8f0;
-    overflow-x: auto;
-}
-
-/* TABLE */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-thead {
-    background: #eff6ff;
-}
-
-th {
-    text-align: left;
-    padding: 14px 12px;
-    font-size: 14px;
-    color: #1e3a8a;
-    border-bottom: 1px solid #dbeafe;
-}
-
-td {
-    padding: 14px 12px;
-    border-bottom: 1px solid #e2e8f0;
-    font-size: 14px;
-    color: #334155;
-}
-
-tr:hover {
-    background: #f8fafc;
-}
-
-/* FORM / OTHER BOXES */
-.form-container,
-.profile-container,
-.login-container,
-.landing-container {
-    background: white;
-    padding: 22px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
-    border: 1px solid #e2e8f0;
-}
-
-/* INPUTS */
-input,
-textarea,
-select {
-    width: 100%;
-    padding: 11px 12px;
-    margin: 8px 0 16px;
-    border: 1px solid #cbd5e1;
+    padding: 30px;
     border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-    border-color: #3b82f6;
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #2c3e50;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1000px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
+/* 4. Project Card Styling */
+.project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-    .top-bar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+.project:hover {
+    border-color: #3498db;
+}
+
+.project h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+/* 5. Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #ddd;
+}
+
+input, select { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    box-sizing: border-box; 
+}
+
+    button { 
+        width: 100%; 
+        margin-top: 20px; 
+        padding: 12px; 
+        background: #6366f1; 
+        color: white; 
+        border: none; 
+        border-radius: 6px; 
+        cursor: pointer; 
+        font-size: 16px; 
+}
+
+    button:hover { 
+        background: #4f46e5; 
+}
+
+    #result { 
+        margin-top: 20px; 
+        padding: 15px; 
+        background: #eef2ff; 
+        border-left: 4px solid #6366f1; 
+        display: none; 
+}
+
+    .copy-hint { 
+        font-size: 0.8em; 
+        color: #888; 
+        margin-top: 10px; 
 }

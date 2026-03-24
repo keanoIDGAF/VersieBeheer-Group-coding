@@ -1,9 +1,5 @@
 <?php
-<<<<<<< Updated upstream
-?>
 
-<?php
-=======
 // 1. Database verbinding instellen
 $host = 'localhost';
 $db   = 'prjct'; // Change this to your database name
@@ -32,7 +28,6 @@ $current_data = $stmt->fetch();
 if (!$current_data) {
     $current_data = array_fill_keys(['fname', 'lname', 'email', 'phone', 'foto', 'aboutme', 'skills', 'language', 'education', 'school', 'company', 'job_title', 'period', 'description', 'linkedin', 'github', 'portfolio'], '');
 }
->>>>>>> Stashed changes
 ?>
 
 <!doctype html>
@@ -41,7 +36,6 @@ if (!$current_data) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profiel Bewerken</title>
-<<<<<<< Updated upstream
 </head>
 <body>
 
@@ -116,10 +110,6 @@ if (!$current_data) {
 </html>
 
 
-
-
-
-=======
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 40px; }
         .form-container { background: white; max-width: 600px; margin: 0 auto; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
@@ -205,7 +195,5 @@ if (!$current_data) {
     
     <a href="profile.php" class="back-link">Annuleren en terug naar profiel</a>
 </div>
-
 </body>
 </html>
->>>>>>> Stashed changes
