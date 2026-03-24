@@ -8,7 +8,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "prjct";
+$dbname = "klantonderhoudsystem";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

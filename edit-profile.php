@@ -2,7 +2,7 @@
 
 // 1. Database verbinding instellen
 $host = 'localhost';
-$db   = 'prjct'; // Change this to your database name
+$db   = 'klantonderhoudsystem'; 
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
